@@ -1,0 +1,130 @@
+[
+    {
+        "id": "chain-business-shirt-01",
+        "productId": "business-shirt-01",
+        "name": "Prozesskette Business Shirt 01",
+        "steps": [
+            {
+                "id": "step-cotton-raw",
+                "processType": "cotton-processing",
+                "materialId": "cotton",
+                "branch": "cotton",
+                "previousSteps": []
+            },
+            {
+                "id": "step-cotton-spinning",
+                "processType": "spinning",
+                "materialId": "cotton",
+                "branch": "cotton",
+                "previousSteps": [
+                    "step-cotton-raw"
+                ]
+            },
+            {
+                "id": "step-polyester-raw",
+                "processType": "polyester-production",
+                "materialId": "polyester",
+                "branch": "polyester",
+                "previousSteps": []
+            },
+            {
+                "id": "step-polyester-spinning",
+                "processType": "spinning",
+                "materialId": "polyester",
+                "branch": "polyester",
+                "previousSteps": [
+                    "step-polyester-raw"
+                ]
+            },
+            {
+                "id": "step-weaving",
+                "processType": "weaving",
+                "branch": "main",
+                "previousSteps": [
+                    "step-cotton-spinning",
+                    "step-polyester-spinning"
+                ]
+            },
+            {
+                "id": "step-dyeing",
+                "processType": "dyeing",
+                "branch": "main",
+                "previousSteps": [
+                    "step-weaving"
+                ]
+            },
+            {
+                "id": "step-sewing",
+                "processType": "sewing",
+                "branch": "main",
+                "previousSteps": [
+                    "step-dyeing"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "chain-business-shirt-02",
+        "productId": "business-shirt-02",
+        "name": "Prozesskette Business Shirt 02",
+        "steps": [
+            {
+                "id": "step2-cotton-raw",
+                "processType": "cotton-processing",
+                "materialId": "cotton",
+                "branch": "cotton",
+                "previousSteps": []
+            },
+            {
+                "id": "step2-cotton-spinning",
+                "processType": "spinning",
+                "materialId": "cotton",
+                "branch": "cotton",
+                "previousSteps": [
+                    "step2-cotton-raw"
+                ]
+            },
+            {
+                "id": "step2-polyester-raw",
+                "processType": "polyester-production",
+                "materialId": "polyester",
+                "branch": "polyester",
+                "previousSteps": []
+            },
+            {
+                "id": "step2-polyester-spinning",
+                "processType": "spinning",
+                "materialId": "polyester",
+                "branch": "polyester",
+                "previousSteps": [
+                    "step2-polyester-raw"
+                ]
+            },
+            {
+                "id": "step2-weaving",
+                "processType": "weaving",
+                "branch": "main",
+                "previousSteps": [
+                    "step2-cotton-spinning",
+                    "step2-polyester-spinning"
+                ]
+            },
+            {
+                "id": "step2-dyeing",
+                "processType": "dyeing",
+                "branch": "main",
+                "previousSteps": [
+                    "step2-weaving"
+                ]
+            },
+            {
+                "id": "step2-sewing",
+                "processType": "sewing",
+                "branch": "main",
+                "previousSteps": [
+                    "step2-dyeing"
+                ]
+            }
+        ]
+    }
+]

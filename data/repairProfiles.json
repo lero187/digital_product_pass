@@ -1,0 +1,38 @@
+[
+    {
+        "id": "repair-shirt-001",
+        "name": "Reparaturprofil Business Shirt 01",
+        "repairable": true,
+        "replaceableButtons": true,
+        "seamsRepairable": true,
+        "collarRepairable": true,
+        "cuffsRepairable": true,
+        "spareButtonIncluded": true,
+        "repairDifficulty": "einfach bis mittel",
+        "repairInstructions": [
+            "Lose Knöpfe können mit handelsüblichem Nähgarn wieder angenäht werden.",
+            "Beschädigte Knöpfe können einzeln ersetzt werden.",
+            "Geöffnete Nähte können nachgenäht werden.",
+            "Kleine Beschädigungen sollten frühzeitig repariert werden, bevor sie sich vergrößern."
+        ],
+        "dataQuality": "demo"
+    },
+    {
+        "id": "repair-shirt-002",
+        "name": "Reparaturprofil Business Shirt 02",
+        "repairable": true,
+        "replaceableButtons": true,
+        "seamsRepairable": true,
+        "collarRepairable": true,
+        "cuffsRepairable": true,
+        "spareButtonIncluded": true,
+        "repairDifficulty": "einfach bis mittel",
+        "repairInstructions": [
+            "Lose oder beschädigte Knöpfe können ersetzt werden.",
+            "Geöffnete Nähte können nachgenäht werden.",
+            "Kragen und Manschetten können bei entsprechender Beschädigung fachgerecht instand gesetzt werden.",
+            "Frühzeitige Reparaturen können die Nutzungsdauer des Produktes verlängern."
+        ],
+        "dataQuality": "demo"
+    }
+]

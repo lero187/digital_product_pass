@@ -1,0 +1,44 @@
+[
+    {
+        "siteId": "site-001",
+        "electricityCo2KgPerKwh": 0.32,
+        "renewableElectricityPercent": 45,
+        "waterSource": "Kommunales Wassernetz",
+        "dataQuality": "demo"
+    },
+    {
+        "siteId": "site-002",
+        "electricityCo2KgPerKwh": 0.28,
+        "renewableElectricityPercent": 55,
+        "waterSource": "Kommunales Wassernetz",
+        "dataQuality": "demo"
+    },
+    {
+        "siteId": "site-003",
+        "electricityCo2KgPerKwh": 0.62,
+        "renewableElectricityPercent": 18,
+        "waterSource": "Grundwasser und Bewässerung",
+        "dataQuality": "demo"
+    },
+    {
+        "siteId": "site-004",
+        "electricityCo2KgPerKwh": 0.30,
+        "renewableElectricityPercent": 50,
+        "waterSource": "Kommunales Wassernetz",
+        "dataQuality": "demo"
+    },
+    {
+        "siteId": "site-005",
+        "electricityCo2KgPerKwh": 0.41,
+        "renewableElectricityPercent": 35,
+        "waterSource": "Kommunales Wassernetz",
+        "dataQuality": "demo"
+    },
+    {
+        "siteId": "site-006",
+        "electricityCo2KgPerKwh": 0.24,
+        "renewableElectricityPercent": 65,
+        "waterSource": "Kommunales Wassernetz",
+        "dataQuality": "demo"
+    }
+]

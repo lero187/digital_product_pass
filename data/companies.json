@@ -1,0 +1,32 @@
+[
+    {
+        "id": "company-001",
+        "name": "TextileWorks GmbH",
+        "country": "Deutschland",
+        "website": "https://example.com"
+    },
+    {
+        "id": "company-002",
+        "name": "CottonSource India Ltd.",
+        "country": "Indien",
+        "website": "https://example.com"
+    },
+    {
+        "id": "company-003",
+        "name": "PolyFiber Europe GmbH",
+        "country": "Deutschland",
+        "website": "https://example.com"
+    },
+    {
+        "id": "company-004",
+        "name": "GreenCotton Türkiye A.S.",
+        "country": "Türkei",
+        "website": "https://example.com"
+    },
+    {
+        "id": "company-005",
+        "name": "RePoly Textiles GmbH",
+        "country": "Deutschland",
+        "website": "https://example.com"
+    }
+]

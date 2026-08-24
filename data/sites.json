@@ -1,0 +1,44 @@
+[
+    {
+        "id": "site-001",
+        "companyId": "company-001",
+        "name": "TextileWorks Aachen",
+        "country": "Deutschland",
+        "city": "Aachen"
+    },
+    {
+        "id": "site-002",
+        "companyId": "company-001",
+        "name": "TextileWorks Köln",
+        "country": "Deutschland",
+        "city": "Köln"
+    },
+    {
+        "id": "site-003",
+        "companyId": "company-002",
+        "name": "CottonSource Gujarat",
+        "country": "Indien",
+        "city": "Ahmedabad"
+    },
+    {
+        "id": "site-004",
+        "companyId": "company-003",
+        "name": "PolyFiber Düsseldorf",
+        "country": "Deutschland",
+        "city": "Düsseldorf"
+    },
+    {
+        "id": "site-005",
+        "companyId": "company-004",
+        "name": "GreenCotton Izmir",
+        "country": "Türkei",
+        "city": "Izmir"
+    },
+    {
+        "id": "site-006",
+        "companyId": "company-005",
+        "name": "RePoly Essen",
+        "country": "Deutschland",
+        "city": "Essen"
+    }
+]

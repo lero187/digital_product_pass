@@ -1,0 +1,22 @@
+[
+    {
+        "id": "durability-shirt-001",
+        "name": "Haltbarkeitsprofil Business Shirt 01",
+        "abrasionResistanceCycles": 25000,
+        "colorFastnessRating": 4,
+        "seamStrengthRating": "hoch",
+        "dimensionalChangePercent": 2,
+        "qualityNote": "Für regelmäßige Nutzung ausgelegtes Businesshemd.",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "durability-shirt-002",
+        "name": "Haltbarkeitsprofil Business Shirt 02",
+        "abrasionResistanceCycles": 30000,
+        "colorFastnessRating": 4,
+        "seamStrengthRating": "hoch",
+        "dimensionalChangePercent": 1.5,
+        "qualityNote": "Höheres Stoffgewicht und robuste Verarbeitung.",
+        "dataQuality": "demo"
+    }
+]

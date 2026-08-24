@@ -1,0 +1,607 @@
+{
+  "schemaVersion": "0.1-demo",
+  "dppId": "DPP-10004567-20260824111728817",
+  "passportLevel": "variant-demo",
+  "createdAt": "2026-08-24T11:17:28.817Z",
+  "status": "complete",
+  "dataQuality": "demonstrator",
+  "identification": {
+    "sku": "10004567",
+    "variantId": "VAR-001",
+    "productId": "business-shirt-01",
+    "productName": "Business Shirt 01",
+    "category": "Businesshemd",
+    "description": "Langarm-Businesshemd aus Mischgewebe",
+    "size": {
+      "id": "M",
+      "name": "M"
+    },
+    "color": {
+      "id": "light-blue",
+      "name": "Hellblau"
+    },
+    "fit": {
+      "id": "slim",
+      "name": "Slim Fit"
+    }
+  },
+  "product": {
+    "sleeveType": "Langarm",
+    "collarType": "Kentkragen",
+    "buttonCount": 9,
+    "referenceSize": "M",
+    "calculatedFabricAreaM2": 1.584,
+    "fabricWeightGramsPerM2": 125,
+    "mainFabricMassGrams": 198,
+    "additionalComponentsMassGrams": 39,
+    "totalProductMassGrams": 237,
+    "packagingMassGrams": 143,
+    "shippingUnitMassGrams": 380
+  },
+  "materials": [
+    {
+      "materialId": "cotton",
+      "materialName": "Baumwolle",
+      "percentage": 60,
+      "massGrams": 118.8,
+      "source": {
+        "sourceId": "source-cotton-001",
+        "name": "Baumwolle – CottonSource India",
+        "companyId": "company-002",
+        "companyName": "CottonSource India Ltd.",
+        "siteId": "site-003",
+        "siteName": "CottonSource Gujarat",
+        "city": "Ahmedabad",
+        "country": "Indien",
+        "originRegion": "Gujarat",
+        "originCountry": "Indien",
+        "recycledContentPercent": 0,
+        "certifications": [
+          "Demo Cotton Standard"
+        ],
+        "dataQuality": "demo"
+      }
+    },
+    {
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "percentage": 40,
+      "massGrams": 79.2,
+      "source": {
+        "sourceId": "source-polyester-001",
+        "name": "Polyester – PolyFiber Europe",
+        "companyId": "company-003",
+        "companyName": "PolyFiber Europe GmbH",
+        "siteId": "site-004",
+        "siteName": "PolyFiber Düsseldorf",
+        "city": "Düsseldorf",
+        "country": "Deutschland",
+        "originRegion": "Nordrhein-Westfalen",
+        "originCountry": "Deutschland",
+        "recycledContentPercent": 0,
+        "certifications": [],
+        "dataQuality": "demo"
+      }
+    }
+  ],
+  "components": [
+    {
+      "componentId": "component-thread-001",
+      "name": "Nähgarn Polyester",
+      "category": "Nähgarn",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "quantity": 4,
+      "unit": "g",
+      "dataQuality": "demo"
+    },
+    {
+      "componentId": "component-button-001",
+      "name": "Polyesterknopf Weiß",
+      "category": "Knopf",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "quantity": 18,
+      "unit": "g",
+      "dataQuality": "demo"
+    },
+    {
+      "componentId": "component-interlining-001",
+      "name": "Kragen- und Manschetteneinlage",
+      "category": "Einlage",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "quantity": 15,
+      "unit": "g",
+      "dataQuality": "demo"
+    },
+    {
+      "componentId": "component-label-001",
+      "name": "Textiletikett",
+      "category": "Label",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "quantity": 2,
+      "unit": "g",
+      "dataQuality": "demo"
+    }
+  ],
+  "production": [
+    {
+      "stepId": "step-cotton-raw",
+      "processType": "cotton-processing",
+      "processName": "Baumwollgewinnung und -aufbereitung",
+      "branch": "cotton",
+      "materialId": "cotton",
+      "materialName": "Baumwolle",
+      "previousSteps": [],
+      "company": {
+        "id": "company-002",
+        "name": "CottonSource India Ltd."
+      },
+      "site": {
+        "id": "site-003",
+        "name": "CottonSource Gujarat",
+        "city": "Ahmedabad",
+        "country": "Indien"
+      }
+    },
+    {
+      "stepId": "step-cotton-spinning",
+      "processType": "spinning",
+      "processName": "Spinnen",
+      "branch": "cotton",
+      "materialId": "cotton",
+      "materialName": "Baumwolle",
+      "previousSteps": [
+        "step-cotton-raw"
+      ],
+      "assignment": {
+        "company": {
+          "id": "company-001",
+          "name": "TextileWorks GmbH"
+        },
+        "site": {
+          "id": "site-001",
+          "name": "TextileWorks Aachen",
+          "city": "Aachen",
+          "country": "Deutschland"
+        },
+        "department": {
+          "id": "department-001",
+          "name": "Baumwollspinnerei"
+        }
+      }
+    },
+    {
+      "stepId": "step-polyester-raw",
+      "processType": "polyester-production",
+      "processName": "Polyesterfaser-Herstellung",
+      "branch": "polyester",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "previousSteps": [],
+      "company": {
+        "id": "company-003",
+        "name": "PolyFiber Europe GmbH"
+      },
+      "site": {
+        "id": "site-004",
+        "name": "PolyFiber Düsseldorf",
+        "city": "Düsseldorf",
+        "country": "Deutschland"
+      }
+    },
+    {
+      "stepId": "step-polyester-spinning",
+      "processType": "spinning",
+      "processName": "Spinnen",
+      "branch": "polyester",
+      "materialId": "polyester",
+      "materialName": "Polyester",
+      "previousSteps": [
+        "step-polyester-raw"
+      ],
+      "assignment": {
+        "company": {
+          "id": "company-003",
+          "name": "PolyFiber Europe GmbH"
+        },
+        "site": {
+          "id": "site-004",
+          "name": "PolyFiber Düsseldorf",
+          "city": "Düsseldorf",
+          "country": "Deutschland"
+        },
+        "department": {
+          "id": "department-010",
+          "name": "Polyesterspinnerei"
+        }
+      }
+    },
+    {
+      "stepId": "step-weaving",
+      "processType": "weaving",
+      "processName": "Weben",
+      "branch": "main",
+      "materialId": null,
+      "materialName": null,
+      "previousSteps": [
+        "step-cotton-spinning",
+        "step-polyester-spinning"
+      ],
+      "assignment": {
+        "company": {
+          "id": "company-001",
+          "name": "TextileWorks GmbH"
+        },
+        "site": {
+          "id": "site-001",
+          "name": "TextileWorks Aachen",
+          "city": "Aachen",
+          "country": "Deutschland"
+        },
+        "department": {
+          "id": "department-002",
+          "name": "Weberei"
+        }
+      }
+    },
+    {
+      "stepId": "step-dyeing",
+      "processType": "dyeing",
+      "processName": "Färben und Veredeln",
+      "branch": "main",
+      "materialId": null,
+      "materialName": null,
+      "previousSteps": [
+        "step-weaving"
+      ],
+      "assignment": {
+        "company": {
+          "id": "company-001",
+          "name": "TextileWorks GmbH"
+        },
+        "site": {
+          "id": "site-001",
+          "name": "TextileWorks Aachen",
+          "city": "Aachen",
+          "country": "Deutschland"
+        },
+        "department": {
+          "id": "department-003",
+          "name": "Färberei"
+        }
+      }
+    },
+    {
+      "stepId": "step-sewing",
+      "processType": "sewing",
+      "processName": "Konfektion",
+      "branch": "main",
+      "materialId": null,
+      "materialName": null,
+      "previousSteps": [
+        "step-dyeing"
+      ],
+      "assignment": {
+        "company": {
+          "id": "company-001",
+          "name": "TextileWorks GmbH"
+        },
+        "site": {
+          "id": "site-001",
+          "name": "TextileWorks Aachen",
+          "city": "Aachen",
+          "country": "Deutschland"
+        },
+        "department": {
+          "id": "department-004",
+          "name": "Konfektion"
+        }
+      }
+    }
+  ],
+  "transport": [
+    {
+      "fromStepId": "step-cotton-raw",
+      "toStepId": "step-cotton-spinning",
+      "fromProcess": "Baumwollgewinnung und -aufbereitung – Baumwolle",
+      "toProcess": "Spinnen – Baumwolle",
+      "fromSite": {
+        "id": "site-003",
+        "name": "CottonSource Gujarat",
+        "city": "Ahmedabad",
+        "country": "Indien"
+      },
+      "toSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 118.8,
+      "externalTransport": true,
+      "status": "calculated",
+      "distanceKm": 6800,
+      "transportMode": {
+        "id": "ship",
+        "name": "Seeschiff"
+      },
+      "impact": {
+        "co2Kg": 0.00969,
+        "energyKwh": 0.04039
+      }
+    },
+    {
+      "fromStepId": "step-polyester-raw",
+      "toStepId": "step-polyester-spinning",
+      "fromProcess": "Polyesterfaser-Herstellung – Polyester",
+      "toProcess": "Spinnen – Polyester",
+      "fromSite": {
+        "id": "site-004",
+        "name": "PolyFiber Düsseldorf",
+        "city": "Düsseldorf",
+        "country": "Deutschland"
+      },
+      "toSite": {
+        "id": "site-004",
+        "name": "PolyFiber Düsseldorf",
+        "city": "Düsseldorf",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 79.2,
+      "externalTransport": false,
+      "status": "same-site",
+      "distanceKm": 0,
+      "transportMode": null,
+      "impact": {
+        "co2Kg": 0,
+        "energyKwh": 0
+      }
+    },
+    {
+      "fromStepId": "step-cotton-spinning",
+      "toStepId": "step-weaving",
+      "fromProcess": "Spinnen – Baumwolle",
+      "toProcess": "Weben",
+      "fromSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "toSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 118.8,
+      "externalTransport": false,
+      "status": "same-site",
+      "distanceKm": 0,
+      "transportMode": null,
+      "impact": {
+        "co2Kg": 0,
+        "energyKwh": 0
+      }
+    },
+    {
+      "fromStepId": "step-polyester-spinning",
+      "toStepId": "step-weaving",
+      "fromProcess": "Spinnen – Polyester",
+      "toProcess": "Weben",
+      "fromSite": {
+        "id": "site-004",
+        "name": "PolyFiber Düsseldorf",
+        "city": "Düsseldorf",
+        "country": "Deutschland"
+      },
+      "toSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 79.2,
+      "externalTransport": true,
+      "status": "calculated",
+      "distanceKm": 85,
+      "transportMode": {
+        "id": "truck",
+        "name": "LKW"
+      },
+      "impact": {
+        "co2Kg": 0.00061,
+        "energyKwh": 0.00236
+      }
+    },
+    {
+      "fromStepId": "step-weaving",
+      "toStepId": "step-dyeing",
+      "fromProcess": "Weben",
+      "toProcess": "Färben und Veredeln",
+      "fromSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "toSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 198,
+      "externalTransport": false,
+      "status": "same-site",
+      "distanceKm": 0,
+      "transportMode": null,
+      "impact": {
+        "co2Kg": 0,
+        "energyKwh": 0
+      }
+    },
+    {
+      "fromStepId": "step-dyeing",
+      "toStepId": "step-sewing",
+      "fromProcess": "Färben und Veredeln",
+      "toProcess": "Konfektion",
+      "fromSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "toSite": {
+        "id": "site-001",
+        "name": "TextileWorks Aachen",
+        "city": "Aachen",
+        "country": "Deutschland"
+      },
+      "transportedMassGrams": 198,
+      "externalTransport": false,
+      "status": "same-site",
+      "distanceKm": 0,
+      "transportMode": null,
+      "impact": {
+        "co2Kg": 0,
+        "energyKwh": 0
+      }
+    }
+  ],
+  "packaging": [
+    {
+      "packagingMaterialId": "packaging-cardboard-001",
+      "name": "Versandkarton",
+      "material": "Karton",
+      "massGrams": 120,
+      "recycledContentPercent": 80,
+      "recyclable": true,
+      "dataQuality": "demo"
+    },
+    {
+      "packagingMaterialId": "packaging-paper-001",
+      "name": "Seidenpapier",
+      "material": "Papier",
+      "massGrams": 15,
+      "recycledContentPercent": 30,
+      "recyclable": true,
+      "dataQuality": "demo"
+    },
+    {
+      "packagingMaterialId": "packaging-plastic-001",
+      "name": "Polybeutel",
+      "material": "LDPE",
+      "massGrams": 8,
+      "recycledContentPercent": 20,
+      "recyclable": true,
+      "dataQuality": "demo"
+    }
+  ],
+  "environmentalBalance": {
+    "rawMaterials": {
+      "co2Kg": 0.697,
+      "waterLiters": 864.864,
+      "energyKwh": 1.489
+    },
+    "additionalComponents": {
+      "co2Kg": 0.1868,
+      "waterLiters": 3.24,
+      "energyKwh": 0.4665
+    },
+    "packaging": {
+      "co2Kg": 0.1386,
+      "waterLiters": 1.855,
+      "energyKwh": 0.365
+    },
+    "production": {
+      "co2Kg": 0.8806,
+      "waterLiters": 25.3836,
+      "energyKwh": 2.5898
+    },
+    "transport": {
+      "co2Kg": 0.0103,
+      "energyKwh": 0.04275
+    },
+    "total": {
+      "co2Kg": 1.9132,
+      "waterLiters": 895.3426,
+      "energyKwh": 4.953
+    }
+  },
+  "care": {
+    "id": "care-shirt-001",
+    "name": "Standardpflege Businesshemd",
+    "washingTemperatureC": 30,
+    "washingAllowed": true,
+    "bleachingAllowed": false,
+    "tumbleDryingAllowed": false,
+    "ironingAllowed": true,
+    "ironingTemperature": "mittel",
+    "professionalCleaningAllowed": true,
+    "airDryingRecommended": true,
+    "careText": "Bei 30 °C waschen, nicht bleichen, lufttrocknen und bei mittlerer Temperatur bügeln.",
+    "dataQuality": "demo"
+  },
+  "durability": {
+    "id": "durability-shirt-001",
+    "name": "Haltbarkeitsprofil Business Shirt 01",
+    "abrasionResistanceCycles": 25000,
+    "colorFastnessRating": 4,
+    "seamStrengthRating": "hoch",
+    "dimensionalChangePercent": 2,
+    "qualityNote": "Für regelmäßige Nutzung ausgelegtes Businesshemd.",
+    "dataQuality": "demo"
+  },
+  "repair": {
+    "id": "repair-shirt-001",
+    "name": "Reparaturprofil Business Shirt 01",
+    "repairable": true,
+    "replaceableButtons": true,
+    "seamsRepairable": true,
+    "collarRepairable": true,
+    "cuffsRepairable": true,
+    "spareButtonIncluded": true,
+    "repairDifficulty": "einfach bis mittel",
+    "repairInstructions": [
+      "Lose Knöpfe können mit handelsüblichem Nähgarn wieder angenäht werden.",
+      "Beschädigte Knöpfe können einzeln ersetzt werden.",
+      "Geöffnete Nähte können nachgenäht werden.",
+      "Kleine Beschädigungen sollten frühzeitig repariert werden, bevor sie sich vergrößern."
+    ],
+    "dataQuality": "demo"
+  },
+  "circularity": {
+    "id": "circularity-shirt-001",
+    "name": "Kreislaufprofil Business Shirt 01",
+    "reusable": true,
+    "secondHandSuitable": true,
+    "donationSuitable": true,
+    "materialSeparationRecommended": true,
+    "buttonsRemovable": true,
+    "labelsRemovable": true,
+    "recyclingPotential": "eingeschränkt",
+    "recyclingReason": "Das Baumwoll-Polyester-Mischgewebe erschwert eine sortenreine Trennung der Fasern.",
+    "endOfLifeInstructions": [
+      "Das Produkt möglichst lange weiterverwenden oder reparieren.",
+      "Bei guter Erhaltung als Second-Hand-Produkt weitergeben.",
+      "Vor einer stofflichen Verwertung Knöpfe und andere leicht entfernbare Komponenten abtrennen.",
+      "Nicht mehr nutzbare Textilien über geeignete Textilsammel- oder Rücknahmesysteme abgeben."
+    ],
+    "preferredEndOfLifeOrder": [
+      "Weiterverwenden",
+      "Reparieren",
+      "Weitergeben oder verkaufen",
+      "Textilsammlung",
+      "Recycling"
+    ],
+    "dataQuality": "demo"
+  },
+  "validation": {
+    "warningCount": 0,
+    "warnings": []
+  }
+}

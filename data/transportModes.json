@@ -1,0 +1,30 @@
+[
+    {
+        "id": "truck",
+        "name": "LKW",
+        "co2KgPerTonneKm": 0.09,
+        "energyKwhPerTonneKm": 0.35,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "rail",
+        "name": "Bahn",
+        "co2KgPerTonneKm": 0.025,
+        "energyKwhPerTonneKm": 0.12,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "ship",
+        "name": "Seeschiff",
+        "co2KgPerTonneKm": 0.012,
+        "energyKwhPerTonneKm": 0.05,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "air",
+        "name": "Luftfracht",
+        "co2KgPerTonneKm": 0.6,
+        "energyKwhPerTonneKm": 2.4,
+        "dataQuality": "demo"
+    }
+]

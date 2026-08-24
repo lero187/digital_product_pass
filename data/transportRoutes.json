@@ -1,0 +1,50 @@
+[
+    {
+        "id": "route-001",
+        "fromSiteId": "site-003",
+        "toSiteId": "site-001",
+        "distanceKm": 6800,
+        "defaultTransportModeId": "ship",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "route-002",
+        "fromSiteId": "site-003",
+        "toSiteId": "site-002",
+        "distanceKm": 6750,
+        "defaultTransportModeId": "ship",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "route-003",
+        "fromSiteId": "site-005",
+        "toSiteId": "site-001",
+        "distanceKm": 2500,
+        "defaultTransportModeId": "truck",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "route-004",
+        "fromSiteId": "site-004",
+        "toSiteId": "site-001",
+        "distanceKm": 85,
+        "defaultTransportModeId": "truck",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "route-005",
+        "fromSiteId": "site-006",
+        "toSiteId": "site-001",
+        "distanceKm": 120,
+        "defaultTransportModeId": "truck",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "route-006",
+        "fromSiteId": "site-001",
+        "toSiteId": "site-002",
+        "distanceKm": 75,
+        "defaultTransportModeId": "truck",
+        "dataQuality": "demo"
+    }
+]

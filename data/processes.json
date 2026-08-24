@@ -1,0 +1,32 @@
+[
+    {
+        "id": "cotton-processing",
+        "name": "Baumwollgewinnung und -aufbereitung",
+        "category": "Rohstoff"
+    },
+    {
+        "id": "polyester-production",
+        "name": "Polyesterfaser-Herstellung",
+        "category": "Rohstoff"
+    },
+    {
+        "id": "spinning",
+        "name": "Spinnen",
+        "category": "Garnherstellung"
+    },
+    {
+        "id": "weaving",
+        "name": "Weben",
+        "category": "Stoffherstellung"
+    },
+    {
+        "id": "dyeing",
+        "name": "Färben und Veredeln",
+        "category": "Färbung und Veredelung"
+    },
+    {
+        "id": "sewing",
+        "name": "Konfektion",
+        "category": "Produktion"
+    }
+]

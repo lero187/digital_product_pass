@@ -1,0 +1,118 @@
+[
+    {
+        "id": "business-shirt-01",
+        "name": "Business Shirt 01",
+        "category": "Businesshemd",
+        "description": "Langarm-Businesshemd aus Mischgewebe",
+        "referenceSize": "M",
+        "baseFabricArea": 1.65,
+        "fabricWeight": 125,
+        "sleeveType": "Langarm",
+        "collarType": "Kentkragen",
+        "buttonCount": 9,
+        "careProfileId": "care-shirt-001",
+        "durabilityProfileId": "durability-shirt-001",
+        "repairProfileId": "repair-shirt-001",
+        "circularityProfileId": "circularity-shirt-001",
+        "materialComposition": [
+            {
+                "materialId": "cotton",
+                "percentage": 60
+            },
+            {
+                "materialId": "polyester",
+                "percentage": 40
+            }
+        ],
+        "components": [
+            {
+                "componentId": "component-thread-001",
+                "quantity": 4
+            },
+            {
+                "componentId": "component-button-001",
+                "quantity": 18
+            },
+            {
+                "componentId": "component-interlining-001",
+                "quantity": 15
+            },
+            {
+                "componentId": "component-label-001",
+                "quantity": 2
+            }
+        ],
+        "packaging": [
+            {
+                "packagingMaterialId": "packaging-cardboard-001",
+                "quantityGrams": 120
+            },
+            {
+                "packagingMaterialId": "packaging-paper-001",
+                "quantityGrams": 15
+            },
+            {
+                "packagingMaterialId": "packaging-plastic-001",
+                "quantityGrams": 8
+            }
+        ]
+    },
+    {
+        "id": "business-shirt-02",
+        "name": "Business Shirt 02",
+        "category": "Businesshemd",
+        "description": "Businesshemd mit höherem Stoffgewicht",
+        "referenceSize": "M",
+        "baseFabricArea": 1.7,
+        "fabricWeight": 140,
+        "sleeveType": "Langarm",
+        "collarType": "Haifischkragen",
+        "buttonCount": 9,
+        "careProfileId": "care-shirt-002",
+        "durabilityProfileId": "durability-shirt-002",
+        "repairProfileId": "repair-shirt-002",
+        "circularityProfileId": "circularity-shirt-002",
+        "materialComposition": [
+            {
+                "materialId": "cotton",
+                "percentage": 70
+            },
+            {
+                "materialId": "polyester",
+                "percentage": 30
+            }
+        ],
+        "components": [
+            {
+                "componentId": "component-thread-001",
+                "quantity": 4
+            },
+            {
+                "componentId": "component-button-001",
+                "quantity": 18
+            },
+            {
+                "componentId": "component-interlining-001",
+                "quantity": 15
+            },
+            {
+                "componentId": "component-label-001",
+                "quantity": 2
+            }
+        ],
+        "packaging": [
+            {
+                "packagingMaterialId": "packaging-cardboard-001",
+                "quantityGrams": 120
+            },
+            {
+                "packagingMaterialId": "packaging-paper-001",
+                "quantityGrams": 15
+            },
+            {
+                "packagingMaterialId": "packaging-plastic-001",
+                "quantityGrams": 8
+            }
+        ]
+    }
+]

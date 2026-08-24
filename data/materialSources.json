@@ -1,0 +1,68 @@
+[
+    {
+        "id": "source-cotton-001",
+        "materialId": "cotton",
+        "companyId": "company-002",
+        "siteId": "site-003",
+        "name": "Baumwolle – CottonSource India",
+        "originCountry": "Indien",
+        "originRegion": "Gujarat",
+        "co2KgPerKg": 2.8,
+        "waterLitersPerKg": 7200,
+        "energyKwhPerKg": 4.2,
+        "recycledContent": 0,
+        "certifications": [
+            "Demo Cotton Standard"
+        ],
+        "dataQuality": "demo"
+    },
+    {
+        "id": "source-cotton-002",
+        "materialId": "cotton",
+        "companyId": "company-004",
+        "siteId": "site-005",
+        "name": "Baumwolle – GreenCotton Türkiye",
+        "originCountry": "Türkei",
+        "originRegion": "Izmir",
+        "co2KgPerKg": 1.9,
+        "waterLitersPerKg": 5100,
+        "energyKwhPerKg": 3.6,
+        "recycledContent": 0,
+        "certifications": [
+            "Demo Organic Standard"
+        ],
+        "dataQuality": "demo"
+    },
+    {
+        "id": "source-polyester-001",
+        "materialId": "polyester",
+        "companyId": "company-003",
+        "siteId": "site-004",
+        "name": "Polyester – PolyFiber Europe",
+        "originCountry": "Deutschland",
+        "originRegion": "Nordrhein-Westfalen",
+        "co2KgPerKg": 4.6,
+        "waterLitersPerKg": 120,
+        "energyKwhPerKg": 12.5,
+        "recycledContent": 0,
+        "certifications": [],
+        "dataQuality": "demo"
+    },
+    {
+        "id": "source-polyester-002",
+        "materialId": "polyester",
+        "companyId": "company-005",
+        "siteId": "site-006",
+        "name": "Recyceltes Polyester – RePoly Textiles",
+        "originCountry": "Deutschland",
+        "originRegion": "Nordrhein-Westfalen",
+        "co2KgPerKg": 2.7,
+        "waterLitersPerKg": 80,
+        "energyKwhPerKg": 7.8,
+        "recycledContent": 100,
+        "certifications": [
+            "Demo Recycled Standard"
+        ],
+        "dataQuality": "demo"
+    }
+]

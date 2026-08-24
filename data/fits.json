@@ -1,0 +1,17 @@
+[
+    {
+        "id": "slim",
+        "name": "Slim Fit",
+        "fabricFactor": 0.96
+    },
+    {
+        "id": "regular",
+        "name": "Regular Fit",
+        "fabricFactor": 1.00
+    },
+    {
+        "id": "comfort",
+        "name": "Comfort Fit",
+        "fabricFactor": 1.05
+    }
+]

@@ -1,0 +1,97 @@
+[
+    {
+        "id": "department-001",
+        "siteId": "site-001",
+        "name": "Baumwollspinnerei",
+        "processType": "spinning",
+        "supportedMaterials": [
+            "cotton"
+        ]
+    },
+    {
+        "id": "department-002",
+        "siteId": "site-001",
+        "name": "Weberei",
+        "processType": "weaving",
+        "supportedMaterials": [
+            "cotton",
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-003",
+        "siteId": "site-001",
+        "name": "Färberei",
+        "processType": "dyeing",
+        "supportedMaterials": [
+            "cotton",
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-004",
+        "siteId": "site-001",
+        "name": "Konfektion",
+        "processType": "sewing",
+        "supportedMaterials": [
+            "cotton",
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-005",
+        "siteId": "site-002",
+        "name": "Weberei",
+        "processType": "weaving",
+        "supportedMaterials": [
+            "cotton",
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-006",
+        "siteId": "site-002",
+        "name": "Färberei",
+        "processType": "dyeing",
+        "supportedMaterials": [
+            "cotton",
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-007",
+        "siteId": "site-003",
+        "name": "Baumwollaufbereitung",
+        "processType": "cotton-processing",
+        "supportedMaterials": [
+            "cotton"
+        ]
+    },
+    {
+        "id": "department-008",
+        "siteId": "site-003",
+        "name": "Baumwollspinnerei",
+        "processType": "spinning",
+        "supportedMaterials": [
+            "cotton"
+        ]
+    },
+    {
+        "id": "department-009",
+        "siteId": "site-004",
+        "name": "Polyesterfaser-Produktion",
+        "processType": "polyester-production",
+        "supportedMaterials": [
+            "polyester"
+        ]
+    },
+    {
+        "id": "department-010",
+        "siteId": "site-004",
+        "name": "Polyesterspinnerei",
+        "processType": "spinning",
+        "supportedMaterials": [
+            "polyester"
+        ]
+    }
+]

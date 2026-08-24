@@ -1,0 +1,12 @@
+[
+    {
+        "id": "cotton",
+        "name": "Baumwolle",
+        "category": "Naturfaser"
+    },
+    {
+        "id": "polyester",
+        "name": "Polyester",
+        "category": "Chemiefaser"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "S",
+        "name": "S",
+        "fabricFactor": 0.94
+    },
+    {
+        "id": "M",
+        "name": "M",
+        "fabricFactor": 1.00
+    },
+    {
+        "id": "L",
+        "name": "L",
+        "fabricFactor": 1.06
+    },
+    {
+        "id": "XL",
+        "name": "XL",
+        "fabricFactor": 1.12
+    }
+]

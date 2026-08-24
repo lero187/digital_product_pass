@@ -1,0 +1,85 @@
+[
+    {
+        "id": "process-data-001",
+        "departmentId": "department-001",
+        "processType": "spinning",
+        "materialId": "cotton",
+        "energyKwhPerKg": 2.8,
+        "waterLitersPerKg": 35,
+        "directCo2KgPerKg": 0.08,
+        "materialLossPercent": 4,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-002",
+        "departmentId": "department-008",
+        "processType": "spinning",
+        "materialId": "cotton",
+        "energyKwhPerKg": 3.2,
+        "waterLitersPerKg": 42,
+        "directCo2KgPerKg": 0.10,
+        "materialLossPercent": 5,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-003",
+        "departmentId": "department-010",
+        "processType": "spinning",
+        "materialId": "polyester",
+        "energyKwhPerKg": 2.5,
+        "waterLitersPerKg": 18,
+        "directCo2KgPerKg": 0.06,
+        "materialLossPercent": 2,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-004",
+        "departmentId": "department-002",
+        "processType": "weaving",
+        "energyKwhPerKg": 3.4,
+        "waterLitersPerKg": 12,
+        "directCo2KgPerKg": 0.04,
+        "materialLossPercent": 3,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-005",
+        "departmentId": "department-005",
+        "processType": "weaving",
+        "energyKwhPerKg": 2.9,
+        "waterLitersPerKg": 10,
+        "directCo2KgPerKg": 0.03,
+        "materialLossPercent": 2.5,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-006",
+        "departmentId": "department-003",
+        "processType": "dyeing",
+        "energyKwhPerKg": 5.8,
+        "waterLitersPerKg": 85,
+        "directCo2KgPerKg": 0.15,
+        "materialLossPercent": 1,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-007",
+        "departmentId": "department-006",
+        "processType": "dyeing",
+        "energyKwhPerKg": 5.1,
+        "waterLitersPerKg": 70,
+        "directCo2KgPerKg": 0.12,
+        "materialLossPercent": 1,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "process-data-008",
+        "departmentId": "department-004",
+        "processType": "sewing",
+        "energyKwhPerKg": 1.2,
+        "waterLitersPerKg": 3,
+        "directCo2KgPerKg": 0.02,
+        "materialLossPercent": 8,
+        "dataQuality": "demo"
+    }
+]

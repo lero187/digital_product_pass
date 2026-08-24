@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DPP Herstellerbereich</title>
+</head>
+
+<body>
+
+    <h1>DPP erstellen</h1>
+
+    <p>
+        Hier kann der Hersteller die relevanten Produkt- und Produktionsdaten auswählen.
+        Weitere Informationen werden automatisch aus den hinterlegten Stammdaten geladen.
+    </p>
+
+
+    <form>
+
+        <h2>Produkt</h2>
+
+        <p>
+            <label for="variant">Artikelnummer / Variante:</label><br>
+
+            <select id="variant" name="variant">
+                <option>Lade Artikelnummern...</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="product">Produkt:</label><br>
+
+            <select id="product" name="product">
+                <option>Lade Produkte...</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="size">Größe:</label><br>
+
+            <select id="size" name="size">
+                <option>Lade Größen...</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="color">Farbe:</label><br>
+
+            <select id="color" name="color">
+                <option>Lade Farben...</option>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="fit">Passform:</label><br>
+
+            <select id="fit" name="fit">
+                <option>Lade Passformen...</option>
+            </select>
+        </p>
+
+
+        <h2>Materialzusammensetzung</h2>
+
+        <div id="materialComposition">
+            Lade Materialzusammensetzung...
+        </div>
+
+
+        <h2>Weitere Produktbestandteile</h2>
+
+        <div id="productComponents">
+            Lade Produktbestandteile...
+        </div>
+
+
+        <h2>Berechnete Komponentenbilanz</h2>
+
+        <div id="componentCalculation">
+            Berechnung wird geladen...
+        </div>
+
+
+        <h2>Verpackung</h2>
+
+        <div id="packaging">
+            Lade Verpackungsdaten...
+        </div>
+
+        <h2>Berechnete Verpackungsbilanz</h2>
+
+        <div id="packagingCalculation">
+            Berechnung wird geladen...
+        </div>
+
+
+        <h2>Pflegehinweise</h2>
+
+        <div id="careInformation">
+            Lade Pflegehinweise...
+        </div>
+
+
+        <h2>Haltbarkeit und Qualität</h2>
+
+        <div id="durabilityInformation">
+            Lade Haltbarkeitsdaten...
+        </div>
+
+
+        <h2>Reparatur und Lebensdauer</h2>
+
+        <div id="repairInformation">
+            Lade Reparaturinformationen...
+        </div>
+
+
+        <h2>Wiederverwendung und Recycling</h2>
+
+        <div id="circularityInformation">
+            Lade Kreislaufinformationen...
+        </div>
+
+
+        <h2>Rohstoffquellen</h2>
+
+        <p>
+            Wählen Sie für jeden Rohstoff die verwendete Quelle aus.
+        </p>
+
+        <div id="materialSources">
+            Lade Rohstoffquellen...
+        </div>
+
+
+        <h2>Berechnete Rohstoffbilanz</h2>
+
+        <div id="rawMaterialCalculation">
+            Berechnung wird geladen...
+        </div>
+
+
+        <h2>Prozesskette</h2>
+
+        <div id="processChain">
+            Lade Prozesskette...
+        </div>
+
+
+        <h2>Produktionszuordnung</h2>
+
+        <p>
+            Für jeden Prozessschritt wird ausgewählt, wo dieser durchgeführt wurde.
+        </p>
+
+        <div id="processAssignments">
+            Lade Produktionsmöglichkeiten...
+        </div>
+
+
+        <h2>Berechnete Produktionsbilanz</h2>
+
+        <div id="productionCalculation">
+            Berechnung wird geladen...
+        </div>
+
+
+        <h2>Transportbilanz</h2>
+
+        <div id="transportCalculation">
+            Transporte werden ermittelt...
+        </div>
+
+
+        <h2>Aktuelle Gesamtbilanz</h2>
+
+        <div id="overallCalculation">
+            Gesamtbilanz wird berechnet...
+        </div>
+
+
+        <h2>Digital Product Passport erzeugen</h2>
+
+        <p>
+            Aus den ausgewählten Produkt- und Produktionsdaten wird ein
+            konkreter DPP-Datensatz erstellt.
+        </p>
+
+        <button type="button" id="createDppButton">
+            DPP-Datensatz erzeugen
+        </button>
+
+
+        <button type="button" id="exportDppButton">
+            DPP als JSON exportieren
+        </button>
+
+
+        <div id="dppStatus"></div>
+
+        <h3>DPP-Datensatz</h3>
+
+        <pre id="dppPreview">
+        Noch kein DPP erzeugt.
+        </pre>
+
+
+    </form>
+
+
+    <p>
+        <a href="index.html">Zurück zur Startseite</a>
+    </p>
+
+
+    <script src="js/manufacturer.js"></script>
+
+    <script src="js/supabase-config.js"></script>
+    <script src="js/supabase-dpp.js"></script>
+
+    <script src="js/dpp-builder.js"></script>
+    <script src="js/dpp-export.js"></script>
+
+</body>
+
+</html>

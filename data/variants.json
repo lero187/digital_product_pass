@@ -1,0 +1,38 @@
+[
+    {
+        "id": "VAR-001",
+        "sku": "10004567",
+        "name": "10004567 – Business Shirt 01 / Hellblau / M / Slim Fit",
+        "productId": "business-shirt-01",
+        "sizeId": "M",
+        "colorId": "light-blue",
+        "fitId": "slim"
+    },
+    {
+        "id": "VAR-002",
+        "sku": "10004568",
+        "name": "10004568 – Business Shirt 01 / Hellblau / L / Slim Fit",
+        "productId": "business-shirt-01",
+        "sizeId": "L",
+        "colorId": "light-blue",
+        "fitId": "slim"
+    },
+    {
+        "id": "VAR-003",
+        "sku": "10004569",
+        "name": "10004569 – Business Shirt 01 / Weiß / M / Regular Fit",
+        "productId": "business-shirt-01",
+        "sizeId": "M",
+        "colorId": "white",
+        "fitId": "regular"
+    },
+    {
+        "id": "VAR-004",
+        "sku": "20004567",
+        "name": "20004567 – Business Shirt 02 / Dunkelblau / M / Comfort Fit",
+        "productId": "business-shirt-02",
+        "sizeId": "M",
+        "colorId": "dark-blue",
+        "fitId": "comfort"
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "id": "circularity-shirt-001",
+        "name": "Kreislaufprofil Business Shirt 01",
+        "reusable": true,
+        "secondHandSuitable": true,
+        "donationSuitable": true,
+        "materialSeparationRecommended": true,
+        "buttonsRemovable": true,
+        "labelsRemovable": true,
+        "recyclingPotential": "eingeschränkt",
+        "recyclingReason": "Das Baumwoll-Polyester-Mischgewebe erschwert eine sortenreine Trennung der Fasern.",
+        "endOfLifeInstructions": [
+            "Das Produkt möglichst lange weiterverwenden oder reparieren.",
+            "Bei guter Erhaltung als Second-Hand-Produkt weitergeben.",
+            "Vor einer stofflichen Verwertung Knöpfe und andere leicht entfernbare Komponenten abtrennen.",
+            "Nicht mehr nutzbare Textilien über geeignete Textilsammel- oder Rücknahmesysteme abgeben."
+        ],
+        "preferredEndOfLifeOrder": [
+            "Weiterverwenden",
+            "Reparieren",
+            "Weitergeben oder verkaufen",
+            "Textilsammlung",
+            "Recycling"
+        ],
+        "dataQuality": "demo"
+    },
+    {
+        "id": "circularity-shirt-002",
+        "name": "Kreislaufprofil Business Shirt 02",
+        "reusable": true,
+        "secondHandSuitable": true,
+        "donationSuitable": true,
+        "materialSeparationRecommended": true,
+        "buttonsRemovable": true,
+        "labelsRemovable": true,
+        "recyclingPotential": "eingeschränkt",
+        "recyclingReason": "Das Baumwoll-Polyester-Mischgewebe erschwert eine sortenreine Trennung der Fasern.",
+        "endOfLifeInstructions": [
+            "Das Produkt bei ausreichender Qualität möglichst weiterverwenden.",
+            "Beschädigungen nach Möglichkeit reparieren.",
+            "Gut erhaltene Produkte weitergeben oder als Second-Hand-Produkt nutzen.",
+            "Knöpfe und andere abtrennbare Komponenten vor der stofflichen Verwertung entfernen.",
+            "Nicht mehr nutzbare Textilien einem geeigneten Sammelsystem zuführen."
+        ],
+        "preferredEndOfLifeOrder": [
+            "Weiterverwenden",
+            "Reparieren",
+            "Weitergeben oder verkaufen",
+            "Textilsammlung",
+            "Recycling"
+        ],
+        "dataQuality": "demo"
+    }
+]

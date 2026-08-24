@@ -1,0 +1,35 @@
+[
+    {
+        "id": "packaging-cardboard-001",
+        "name": "Versandkarton",
+        "material": "Karton",
+        "co2KgPerKg": 0.85,
+        "waterLitersPerKg": 12,
+        "energyKwhPerKg": 2.1,
+        "recycledContent": 80,
+        "recyclable": true,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "packaging-paper-001",
+        "name": "Seidenpapier",
+        "material": "Papier",
+        "co2KgPerKg": 1.05,
+        "waterLitersPerKg": 25,
+        "energyKwhPerKg": 3.0,
+        "recycledContent": 30,
+        "recyclable": true,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "packaging-plastic-001",
+        "name": "Polybeutel",
+        "material": "LDPE",
+        "co2KgPerKg": 2.6,
+        "waterLitersPerKg": 5,
+        "energyKwhPerKg": 8.5,
+        "recycledContent": 20,
+        "recyclable": true,
+        "dataQuality": "demo"
+    }
+]

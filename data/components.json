@@ -1,0 +1,46 @@
+[
+    {
+        "id": "component-thread-001",
+        "name": "Nähgarn Polyester",
+        "category": "Nähgarn",
+        "materialId": "polyester",
+        "unit": "g",
+        "co2KgPerKg": 4.2,
+        "waterLitersPerKg": 90,
+        "energyKwhPerKg": 10.5,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "component-button-001",
+        "name": "Polyesterknopf Weiß",
+        "category": "Knopf",
+        "materialId": "polyester",
+        "unit": "g",
+        "co2KgPerKg": 5.0,
+        "waterLitersPerKg": 70,
+        "energyKwhPerKg": 13.0,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "component-interlining-001",
+        "name": "Kragen- und Manschetteneinlage",
+        "category": "Einlage",
+        "materialId": "polyester",
+        "unit": "g",
+        "co2KgPerKg": 4.8,
+        "waterLitersPerKg": 100,
+        "energyKwhPerKg": 11.5,
+        "dataQuality": "demo"
+    },
+    {
+        "id": "component-label-001",
+        "name": "Textiletikett",
+        "category": "Label",
+        "materialId": "polyester",
+        "unit": "g",
+        "co2KgPerKg": 4.0,
+        "waterLitersPerKg": 60,
+        "energyKwhPerKg": 9.0,
+        "dataQuality": "demo"
+    }
+]

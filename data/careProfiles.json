@@ -1,0 +1,30 @@
+[
+    {
+        "id": "care-shirt-001",
+        "name": "Standardpflege Businesshemd",
+        "washingTemperatureC": 30,
+        "washingAllowed": true,
+        "bleachingAllowed": false,
+        "tumbleDryingAllowed": false,
+        "ironingAllowed": true,
+        "ironingTemperature": "mittel",
+        "professionalCleaningAllowed": true,
+        "airDryingRecommended": true,
+        "careText": "Bei 30 °C waschen, nicht bleichen, lufttrocknen und bei mittlerer Temperatur bügeln.",
+        "dataQuality": "demo"
+    },
+    {
+        "id": "care-shirt-002",
+        "name": "Pflegeleichtes Businesshemd",
+        "washingTemperatureC": 40,
+        "washingAllowed": true,
+        "bleachingAllowed": false,
+        "tumbleDryingAllowed": true,
+        "ironingAllowed": true,
+        "ironingTemperature": "niedrig",
+        "professionalCleaningAllowed": true,
+        "airDryingRecommended": true,
+        "careText": "Bei maximal 40 °C waschen. Lufttrocknung wird empfohlen. Bügeln bei niedriger Temperatur.",
+        "dataQuality": "demo"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "id": "light-blue",
+        "name": "Hellblau"
+    },
+    {
+        "id": "white",
+        "name": "Weiß"
+    },
+    {
+        "id": "dark-blue",
+        "name": "Dunkelblau"
+    },
+    {
+        "id": "dark-green",
+        "name": "Dunkelgrün"
+    }
+]
