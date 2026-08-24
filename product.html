@@ -2,94 +2,470 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Digital Product Passport</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Digital Product Passport
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/product.css"
+    >
+
 </head>
+
 
 <body>
 
-    <h1>Digital Product Passport</h1>
 
-    <div id="dppStatus">
-        Produktpass wird geladen...
-    </div>
+<div class="dpp-app">
 
 
-    <section id="productOverview">
-    </section>
+    <!-- ==================================================
+         NAVIGATION
+    ================================================== -->
+
+    <aside class="sidebar">
 
 
-    <section>
-        <h2>Materialien und Herkunft</h2>
-        <div id="materials"></div>
-    </section>
+        <div class="sidebar-brand">
+
+            <div class="brand-logo">
+                DPP
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    Digital Product
+                </div>
+
+                <div class="brand-name">
+                    Passport
+                </div>
+
+            </div>
+
+        </div>
 
 
-    <section>
-        <h2>Herstellung</h2>
-        <div id="production"></div>
-    </section>
+        <nav class="sidebar-navigation">
 
 
-    <section>
-        <h2>Transport</h2>
-        <div id="transport"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item active"
+                data-panel="overviewPanel"
+            >
+                Übersicht
+            </button>
 
 
-    <section>
-        <h2>Umweltbilanz</h2>
-        <div id="environmentalBalance"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="materialsPanel"
+            >
+                Rohstoffe
+            </button>
 
 
-    <section>
-        <h2>Verpackung</h2>
-        <div id="packaging"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="productionPanel"
+            >
+                Produktion
+            </button>
 
 
-    <section>
-        <h2>Pflege</h2>
-        <div id="care"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="environmentPanel"
+            >
+                Umwelt
+            </button>
 
 
-    <section>
-        <h2>Qualität und Haltbarkeit</h2>
-        <div id="durability"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="informationPanel"
+            >
+                Hinweise
+            </button>
 
 
-    <section>
-        <h2>Reparatur</h2>
-        <div id="repair"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="circularityPanel"
+            >
+                Recycling
+            </button>
 
 
-    <section>
-        <h2>Wiederverwendung und Recycling</h2>
-        <div id="circularity"></div>
-    </section>
+            <button
+                type="button"
+                class="nav-item"
+                data-panel="technicalPanel"
+            >
+                DPP-Daten
+            </button>
 
 
-    <section>
-        <h2>Technische DPP-Informationen</h2>
-        <div id="technicalInformation"></div>
-    </section>
+        </nav>
 
 
-    <p>
-        <a href="index.html">
-            Zurück zur Startseite
-        </a>
-    </p>
+        <div class="sidebar-footer">
+
+            <span class="status-dot"></span>
+
+            Digitaler Produktpass
+
+        </div>
 
 
-    <script src="js/supabase-config.js"></script>
-    <script src="js/product.js"></script>
+    </aside>
+
+
+
+    <!-- ==================================================
+         HAUPTBEREICH
+    ================================================== -->
+
+    <main class="main-content">
+
+
+        <div
+            id="dppStatus"
+            class="dpp-status"
+        >
+            Produktpass wird geladen...
+        </div>
+
+
+
+        <!-- ==================================================
+             ÜBERSICHT
+        ================================================== -->
+
+        <section
+            id="overviewPanel"
+            class="tab-panel active"
+        >
+
+            <div id="productOverview"></div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ROHSTOFFE
+        ================================================== -->
+
+        <section
+            id="materialsPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Rohstoffe
+                </span>
+
+                <h1>
+                    Materialien & Herkunft
+                </h1>
+
+                <p>
+                    Zusammensetzung und Herkunft der
+                    eingesetzten Materialien.
+                </p>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div id="materials"></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             PRODUKTION
+        ================================================== -->
+
+        <section
+            id="productionPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Lieferkette
+                </span>
+
+                <h1>
+                    Produktion
+                </h1>
+
+                <p>
+                    Vom Rohstoff bis zum fertigen Hemd.
+                </p>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Herstellung
+                </h2>
+
+                <div id="production"></div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Transportwege
+                </h2>
+
+                <div id="transport"></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             UMWELT
+        ================================================== -->
+
+        <section
+            id="environmentPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Nachhaltigkeit
+                </span>
+
+                <h1>
+                    Umweltbilanz
+                </h1>
+
+                <p>
+                    Gesamtbilanz und Verteilung der
+                    Umweltwirkungen.
+                </p>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div id="environmentalBalance"></div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Verpackung
+                </h2>
+
+                <div id="packaging"></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             HINWEISE
+        ================================================== -->
+
+        <section
+            id="informationPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Produktnutzung
+                </span>
+
+                <h1>
+                    Hinweise
+                </h1>
+
+                <p>
+                    Pflege, Haltbarkeit und Reparatur.
+                </p>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Pflege
+                </h2>
+
+                <div id="care"></div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Qualität & Haltbarkeit
+                </h2>
+
+                <div id="durability"></div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <h2>
+                    Reparatur
+                </h2>
+
+                <div id="repair"></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             RECYCLING
+        ================================================== -->
+
+        <section
+            id="circularityPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Kreislaufwirtschaft
+                </span>
+
+                <h1>
+                    Wiederverwendung & Recycling
+                </h1>
+
+                <p>
+                    Möglichkeiten zur Weiterverwendung
+                    und Verwertung.
+                </p>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div id="circularity"></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             DPP DATEN
+        ================================================== -->
+
+        <section
+            id="technicalPanel"
+            class="tab-panel"
+        >
+
+
+            <div class="page-heading">
+
+                <span>
+                    Digital Product Passport
+                </span>
+
+                <h1>
+                    Technische DPP-Daten
+                </h1>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div id="technicalInformation"></div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- ==================================================
+     SCRIPTS
+================================================== -->
+
+<script src="js/supabase-config.js"></script>
+
+<script src="js/supabase-dpp.js"></script>
+
+<script src="js/product.js"></script>
+
+<script src="js/product-navigation.js"></script>
+
 
 </body>
 

@@ -3,246 +3,642 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>DPP Herstellerbereich</title>
+
+    <link
+        rel="stylesheet"
+        href="css/manufacturer.css"
+    >
 </head>
 
 <body>
 
-    <h1>DPP erstellen</h1>
+    <main class="manufacturer-page">
 
-    <p>
-        Hier kann der Hersteller die relevanten Produkt- und Produktionsdaten auswählen.
-        Weitere Informationen werden automatisch aus den hinterlegten Stammdaten geladen.
-    </p>
+        <header class="page-header">
 
+            <div>
+                <span class="eyebrow">
+                    HERSTELLERBEREICH
+                </span>
 
-    <form>
+                <h1>
+                    Digital Product Passport
+                </h1>
 
-        <h2>Produkt</h2>
+                <p>
+                    Produkt konfigurieren, Daten prüfen und
+                    anschließend den Digital Product Passport erzeugen.
+                </p>
+            </div>
 
-        <p>
-            <label for="variant">Artikelnummer / Variante:</label><br>
+        </header>
 
-            <select id="variant" name="variant">
-                <option>Lade Artikelnummern...</option>
-            </select>
-        </p>
 
+        <form>
 
-        <p>
-            <label for="product">Produkt:</label><br>
+            <!--
+            ==============================================
+            OBERER ARBEITSBEREICH
+            ==============================================
+            -->
 
-            <select id="product" name="product">
-                <option>Lade Produkte...</option>
-            </select>
-        </p>
+            <section class="generator-layout">
 
 
-        <p>
-            <label for="size">Größe:</label><br>
+                <!--
+                ==========================================
+                LINKE SEITE – AUSWAHL
+                ==========================================
+                -->
 
-            <select id="size" name="size">
-                <option>Lade Größen...</option>
-            </select>
-        </p>
+                <div class="configuration-card">
 
+                    <div class="section-heading">
 
-        <p>
-            <label for="color">Farbe:</label><br>
+                        <div>
+                            <span class="section-number">
+                                01
+                            </span>
 
-            <select id="color" name="color">
-                <option>Lade Farben...</option>
-            </select>
-        </p>
+                            <h2>
+                                DPP konfigurieren
+                            </h2>
+                        </div>
 
+                        <p>
+                            Wähle Produkt, Rohstoffe und
+                            Produktionsstandorte aus.
+                        </p>
 
-        <p>
-            <label for="fit">Passform:</label><br>
+                    </div>
 
-            <select id="fit" name="fit">
-                <option>Lade Passformen...</option>
-            </select>
-        </p>
 
+                    <!-- PRODUKT -->
 
-        <h2>Materialzusammensetzung</h2>
+                    <div class="configuration-section">
 
-        <div id="materialComposition">
-            Lade Materialzusammensetzung...
-        </div>
+                        <h3>
+                            Produkt
+                        </h3>
 
+                        <div class="product-selection-grid">
 
-        <h2>Weitere Produktbestandteile</h2>
+                            <div class="field field-wide">
 
-        <div id="productComponents">
-            Lade Produktbestandteile...
-        </div>
+                                <label for="variant">
+                                    Artikelnummer / Variante
+                                </label>
 
+                                <select
+                                    id="variant"
+                                    name="variant"
+                                >
+                                    <option>
+                                        Lade Artikelnummern...
+                                    </option>
+                                </select>
 
-        <h2>Berechnete Komponentenbilanz</h2>
+                            </div>
 
-        <div id="componentCalculation">
-            Berechnung wird geladen...
-        </div>
 
+                            <div class="field">
 
-        <h2>Verpackung</h2>
+                                <label for="product">
+                                    Produkt
+                                </label>
 
-        <div id="packaging">
-            Lade Verpackungsdaten...
-        </div>
+                                <select
+                                    id="product"
+                                    name="product"
+                                >
+                                    <option>
+                                        Lade Produkte...
+                                    </option>
+                                </select>
 
-        <h2>Berechnete Verpackungsbilanz</h2>
+                            </div>
 
-        <div id="packagingCalculation">
-            Berechnung wird geladen...
-        </div>
 
+                            <div class="field">
 
-        <h2>Pflegehinweise</h2>
+                                <label for="size">
+                                    Größe
+                                </label>
 
-        <div id="careInformation">
-            Lade Pflegehinweise...
-        </div>
+                                <select
+                                    id="size"
+                                    name="size"
+                                >
+                                    <option>
+                                        Lade Größen...
+                                    </option>
+                                </select>
 
+                            </div>
 
-        <h2>Haltbarkeit und Qualität</h2>
 
-        <div id="durabilityInformation">
-            Lade Haltbarkeitsdaten...
-        </div>
+                            <div class="field">
 
+                                <label for="color">
+                                    Farbe
+                                </label>
 
-        <h2>Reparatur und Lebensdauer</h2>
+                                <select
+                                    id="color"
+                                    name="color"
+                                >
+                                    <option>
+                                        Lade Farben...
+                                    </option>
+                                </select>
 
-        <div id="repairInformation">
-            Lade Reparaturinformationen...
-        </div>
+                            </div>
 
 
-        <h2>Wiederverwendung und Recycling</h2>
+                            <div class="field">
 
-        <div id="circularityInformation">
-            Lade Kreislaufinformationen...
-        </div>
+                                <label for="fit">
+                                    Passform
+                                </label>
 
+                                <select
+                                    id="fit"
+                                    name="fit"
+                                >
+                                    <option>
+                                        Lade Passformen...
+                                    </option>
+                                </select>
 
-        <h2>Rohstoffquellen</h2>
+                            </div>
 
-        <p>
-            Wählen Sie für jeden Rohstoff die verwendete Quelle aus.
-        </p>
+                        </div>
 
-        <div id="materialSources">
-            Lade Rohstoffquellen...
-        </div>
+                    </div>
 
 
-        <h2>Berechnete Rohstoffbilanz</h2>
+                    <!-- ROHSTOFFE -->
 
-        <div id="rawMaterialCalculation">
-            Berechnung wird geladen...
-        </div>
+                    <div class="configuration-section">
 
+                        <div class="subsection-heading">
 
-        <h2>Prozesskette</h2>
+                            <div>
+                                <h3>
+                                    Rohstoffquellen
+                                </h3>
 
-        <div id="processChain">
-            Lade Prozesskette...
-        </div>
+                                <p>
+                                    Verwendete Lieferanten und
+                                    Herkunftsorte auswählen.
+                                </p>
+                            </div>
 
+                        </div>
 
-        <h2>Produktionszuordnung</h2>
+                        <div
+                            id="materialSources"
+                            class="dynamic-selection-grid"
+                        >
+                            Lade Rohstoffquellen...
+                        </div>
 
-        <p>
-            Für jeden Prozessschritt wird ausgewählt, wo dieser durchgeführt wurde.
-        </p>
+                    </div>
 
-        <div id="processAssignments">
-            Lade Produktionsmöglichkeiten...
-        </div>
 
+                    <!-- PRODUKTION -->
 
-        <h2>Berechnete Produktionsbilanz</h2>
+                    <div class="configuration-section">
 
-        <div id="productionCalculation">
-            Berechnung wird geladen...
-        </div>
+                        <div class="subsection-heading">
 
+                            <div>
+                                <h3>
+                                    Produktion
+                                </h3>
 
-        <h2>Transportbilanz</h2>
+                                <p>
+                                    Unternehmen, Standort und Abteilung
+                                    je Prozessschritt auswählen.
+                                </p>
+                            </div>
 
-        <div id="transportCalculation">
-            Transporte werden ermittelt...
-        </div>
+                        </div>
 
+                        <div
+                            id="processAssignments"
+                            class="process-selection-grid"
+                        >
+                            Lade Produktionsmöglichkeiten...
+                        </div>
 
-        <h2>Aktuelle Gesamtbilanz</h2>
+                    </div>
 
-        <div id="overallCalculation">
-            Gesamtbilanz wird berechnet...
-        </div>
+                </div>
 
 
-        <h2>Digital Product Passport erzeugen</h2>
+                <!--
+                ==========================================
+                RECHTE SEITE – DPP / QR
+                ==========================================
+                -->
 
-        <p>
-            Aus den ausgewählten Produkt- und Produktionsdaten wird ein
-            konkreter DPP-Datensatz erstellt.
-        </p>
+                <aside class="dpp-action-card">
 
-        <button type="button" id="createDppButton">
-            DPP-Datensatz erzeugen
-        </button>
+                    <div class="action-header">
 
+                        <span class="section-number">
+                            02
+                        </span>
 
-        <button type="button" id="exportDppButton">
-            DPP als JSON exportieren
-        </button>
+                        <h2>
+                            DPP erstellen
+                        </h2>
 
+                        <p>
+                            Aus der aktuellen Konfiguration wird
+                            ein neuer Digital Product Passport erzeugt.
+                        </p>
 
-        <div id="dppStatus"></div>
+                    </div>
 
-        <h3>QR-Code</h3>
 
-        <div id="qrCodeStatus">
-            Noch kein QR-Code erzeugt.
-        </div>
+                    <button
+                        type="button"
+                        id="createDppButton"
+                        class="primary-action"
+                    >
+                        DPP erstellen
+                    </button>
 
-        <div id="qrCode"></div>
 
-        <p>
-            <a
-                id="dppPublicLink"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-            ></a>
-        </p>
+                    <button
+                        type="button"
+                        id="exportDppButton"
+                        class="secondary-action"
+                    >
+                        JSON exportieren
+                    </button>
 
-        <h3>DPP-Datensatz</h3>
 
-        <pre id="dppPreview">
-        Noch kein DPP erzeugt.
-        </pre>
+                    <div id="dppStatus"></div>
 
 
-    </form>
+                    <div class="qr-area">
 
+                        <div class="qr-heading">
 
-    <p>
-        <a href="index.html">Zurück zur Startseite</a>
-    </p>
+                            <span>
+                                DIGITALER PRODUKTPASS
+                            </span>
 
+                        </div>
+
+
+                        <div
+                            id="qrCodeStatus"
+                            class="qr-status"
+                        >
+                            Noch kein DPP erzeugt.
+                        </div>
+
+
+                        <div
+                            id="qrCode"
+                            class="qr-code"
+                        ></div>
+
+
+                        <a
+                            id="dppPublicLink"
+                            class="public-link"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ></a>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+
+
+            <!--
+            ==============================================
+            DETAILDATEN
+            ==============================================
+            -->
+
+            <section class="details-area">
+
+                <div class="details-header">
+
+                    <span class="eyebrow">
+                        DATENPRÜFUNG
+                    </span>
+
+                    <h2>
+                        Hinterlegte und berechnete Daten
+                    </h2>
+
+                    <p>
+                        Alle Daten des gewählten Produkts können hier
+                        vor oder nach der DPP-Erstellung kontrolliert werden.
+                    </p>
+
+                </div>
+
+
+                <!-- PRODUKTDATEN -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Produktdaten
+                    </h2>
+
+
+                    <div class="detail-grid">
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Materialzusammensetzung
+                            </h3>
+
+                            <div id="materialComposition">
+                                Lade Materialzusammensetzung...
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Weitere Produktbestandteile
+                            </h3>
+
+                            <div id="productComponents">
+                                Lade Produktbestandteile...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- KOMPONENTEN -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Komponentenbilanz
+                    </h2>
+
+                    <div id="componentCalculation">
+                        Berechnung wird geladen...
+                    </div>
+
+                </section>
+
+
+                <!-- VERPACKUNG -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Verpackung
+                    </h2>
+
+                    <div class="detail-grid">
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Verpackungsdaten
+                            </h3>
+
+                            <div id="packaging">
+                                Lade Verpackungsdaten...
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Verpackungsbilanz
+                            </h3>
+
+                            <div id="packagingCalculation">
+                                Berechnung wird geladen...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ROHSTOFFE -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Rohstoffe
+                    </h2>
+
+                    <div id="rawMaterialCalculation">
+                        Berechnung wird geladen...
+                    </div>
+
+                </section>
+
+
+                <!-- PROZESSKETTE -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Prozesskette
+                    </h2>
+
+                    <div id="processChain">
+                        Lade Prozesskette...
+                    </div>
+
+                </section>
+
+
+                <!-- PRODUKTION -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Produktionsbilanz
+                    </h2>
+
+                    <div id="productionCalculation">
+                        Berechnung wird geladen...
+                    </div>
+
+                </section>
+
+
+                <!-- TRANSPORT -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Transportbilanz
+                    </h2>
+
+                    <div id="transportCalculation">
+                        Transporte werden ermittelt...
+                    </div>
+
+                </section>
+
+
+                <!-- GESAMTBILANZ -->
+
+                <section class="detail-card highlight-card">
+
+                    <h2>
+                        Aktuelle Gesamtbilanz
+                    </h2>
+
+                    <div id="overallCalculation">
+                        Gesamtbilanz wird berechnet...
+                    </div>
+
+                </section>
+
+
+                <!-- NUTZUNG -->
+
+                <section class="detail-card">
+
+                    <h2>
+                        Nutzung und Lebensdauer
+                    </h2>
+
+                    <div class="detail-grid">
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Pflegehinweise
+                            </h3>
+
+                            <div id="careInformation">
+                                Lade Pflegehinweise...
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Haltbarkeit und Qualität
+                            </h3>
+
+                            <div id="durabilityInformation">
+                                Lade Haltbarkeitsdaten...
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Reparatur
+                            </h3>
+
+                            <div id="repairInformation">
+                                Lade Reparaturinformationen...
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-block">
+
+                            <h3>
+                                Wiederverwendung und Recycling
+                            </h3>
+
+                            <div id="circularityInformation">
+                                Lade Kreislaufinformationen...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- JSON -->
+
+                <details class="json-details">
+
+                    <summary>
+                        Technischen DPP-Datensatz anzeigen
+                    </summary>
+
+                    <pre id="dppPreview">Noch kein DPP erzeugt.</pre>
+
+                </details>
+
+            </section>
+
+        </form>
+
+
+        <footer class="page-footer">
+
+            <a href="index.html">
+                ← Zurück zur Startseite
+            </a>
+
+        </footer>
+
+    </main>
+
+
+
+    <!--
+    ==============================================
+    SCRIPTS
+    ==============================================
+    -->
 
     <script src="js/manufacturer.js"></script>
 
     <script src="js/supabase-config.js"></script>
     <script src="js/supabase-dpp.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    ></script>
+
     <script src="js/qr-code.js"></script>
 
     <script src="js/dpp-builder.js"></script>

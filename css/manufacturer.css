@@ -1,0 +1,1408 @@
+/*
+==================================================
+DIGITAL PRODUCT PASSPORT
+HERSTELLERSEITE
+==================================================
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background: #f4f7f5;
+    --surface: #ffffff;
+    --surface-soft: #f2f6f4;
+
+    --text: #18221e;
+    --text-soft: #68736d;
+
+    --accent: #205b4e;
+    --accent-dark: #17463c;
+    --accent-soft: #e4f0ec;
+
+    --border: #dce5e0;
+
+    --success: #1f6a53;
+
+    --radius-small: 10px;
+    --radius-medium: 16px;
+    --radius-large: 22px;
+
+    --shadow:
+        0 14px 40px
+        rgba(26, 48, 39, 0.07);
+}
+
+
+/*
+==================================================
+GRUNDLAYOUT
+==================================================
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background:
+        var(--background);
+
+    color:
+        var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    line-height: 1.5;
+}
+
+
+.manufacturer-page {
+    width:
+        min(
+            1320px,
+            calc(100% - 48px)
+        );
+
+    margin:
+        0 auto;
+
+    padding:
+        42px
+        0
+        70px;
+}
+
+
+/*
+==================================================
+KOPFBEREICH
+==================================================
+*/
+
+.page-header {
+    margin-bottom:
+        28px;
+}
+
+
+.eyebrow {
+    display: block;
+
+    margin-bottom:
+        7px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.3px;
+}
+
+
+.page-header h1 {
+    margin:
+        0
+        0
+        8px;
+
+    font-size:
+        clamp(
+            34px,
+            5vw,
+            48px
+        );
+
+    line-height:
+        1.08;
+
+    letter-spacing:
+        -1.4px;
+}
+
+
+.page-header p {
+    max-width:
+        720px;
+
+    margin:
+        0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        14px;
+}
+
+
+/*
+==================================================
+OBERER GENERATOR
+==================================================
+*/
+
+.generator-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        360px;
+
+    gap:
+        24px;
+
+    align-items:
+        start;
+}
+
+
+/*
+==================================================
+KONFIGURATIONSKARTE
+==================================================
+*/
+
+.configuration-card {
+    overflow: hidden;
+
+    background:
+        var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-large);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding:
+        26px
+        28px
+        22px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.section-heading > div {
+    display: flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size:
+        22px;
+
+    letter-spacing:
+        -0.4px;
+}
+
+
+.section-heading > p {
+    max-width:
+        370px;
+
+    margin:
+        2px
+        0
+        0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        13px;
+
+    text-align:
+        right;
+}
+
+
+.section-number {
+    display: inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        32px;
+
+    height:
+        32px;
+
+    flex:
+        0 0
+        32px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--accent-soft);
+
+    color:
+        var(--accent-dark);
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+}
+
+
+/*
+==================================================
+KONFIGURATIONSBEREICHE
+==================================================
+*/
+
+.configuration-section {
+    padding:
+        24px
+        28px;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.configuration-section:last-child {
+    border-bottom:
+        none;
+}
+
+
+.configuration-section > h3,
+.subsection-heading h3 {
+    margin:
+        0
+        0
+        14px;
+
+    font-size:
+        16px;
+}
+
+
+.subsection-heading {
+    margin-bottom:
+        16px;
+}
+
+
+.subsection-heading h3 {
+    margin-bottom:
+        3px;
+}
+
+
+.subsection-heading p {
+    margin: 0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        12px;
+}
+
+
+/*
+==================================================
+PRODUKTAUSWAHL
+==================================================
+*/
+
+.product-selection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        16px;
+}
+
+
+.field {
+    min-width: 0;
+}
+
+
+.field-wide {
+    grid-column:
+        1 / -1;
+}
+
+
+/*
+==================================================
+FORMULARFELDER
+==================================================
+*/
+
+label {
+    display: block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.15px;
+}
+
+
+select,
+input,
+textarea {
+    width:
+        100%;
+
+    min-height:
+        44px;
+
+    padding:
+        10px
+        12px;
+
+    border:
+        1px solid #cad5cf;
+
+    border-radius:
+        var(--radius-small);
+
+    outline:
+        none;
+
+    background:
+        #ffffff;
+
+    color:
+        var(--text);
+
+    font:
+        inherit;
+
+    font-size:
+        13px;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+select:hover,
+input:hover,
+textarea:hover {
+    border-color:
+        #9dafA6;
+}
+
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color:
+        var(--accent);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(32, 91, 78, 0.11);
+}
+
+
+/*
+==================================================
+DYNAMISCHE ROHSTOFFAUSWAHL
+==================================================
+*/
+
+.dynamic-selection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        14px;
+}
+
+
+.dynamic-selection-grid > div {
+    margin-bottom:
+        0 !important;
+
+    padding:
+        16px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--surface-soft);
+}
+
+
+.dynamic-selection-grid > div h3 {
+    margin:
+        0
+        0
+        10px;
+
+    font-size:
+        13px;
+}
+
+
+.dynamic-selection-grid > div > div {
+    margin-top:
+        10px !important;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        11px;
+}
+
+
+.dynamic-selection-grid p {
+    margin:
+        4px
+        0;
+}
+
+
+/*
+==================================================
+PRODUKTIONS-DROPDOWNS
+==================================================
+*/
+
+.process-selection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        14px;
+}
+
+
+.process-selection-grid > div {
+    margin-bottom:
+        0 !important;
+
+    padding:
+        16px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--surface-soft);
+}
+
+
+.process-selection-grid > div h3 {
+    margin:
+        0
+        0
+        12px;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.35;
+}
+
+
+.process-selection-grid p {
+    margin:
+        5px
+        0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        11px;
+}
+
+
+.process-selection-grid br {
+    display:
+        none;
+}
+
+
+.process-selection-grid label {
+    margin-top:
+        10px;
+}
+
+
+.process-selection-grid select {
+    margin-bottom:
+        6px;
+}
+
+
+/*
+==================================================
+RECHTE DPP-KARTE
+==================================================
+*/
+
+.dpp-action-card {
+    position:
+        sticky;
+
+    top:
+        20px;
+
+    padding:
+        24px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-large);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow);
+}
+
+
+.action-header {
+    margin-bottom:
+        20px;
+}
+
+
+.action-header .section-number {
+    margin-bottom:
+        12px;
+}
+
+
+.action-header h2 {
+    margin:
+        0
+        0
+        7px;
+
+    font-size:
+        22px;
+
+    letter-spacing:
+        -0.4px;
+}
+
+
+.action-header p {
+    margin: 0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        12px;
+}
+
+
+/*
+==================================================
+BUTTONS
+==================================================
+*/
+
+button {
+    width:
+        100%;
+
+    min-height:
+        48px;
+
+    padding:
+        11px
+        16px;
+
+    border:
+        none;
+
+    border-radius:
+        var(--radius-small);
+
+    font:
+        inherit;
+
+    font-size:
+        13px;
+
+    font-weight:
+        750;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.15s ease,
+        transform 0.08s ease;
+}
+
+
+button:active {
+    transform:
+        translateY(1px);
+}
+
+
+.primary-action {
+    background:
+        var(--accent);
+
+    color:
+        #ffffff;
+}
+
+
+.primary-action:hover {
+    background:
+        var(--accent-dark);
+}
+
+
+.secondary-action {
+    margin-top:
+        9px;
+
+    border:
+        1px solid #cedbd5;
+
+    background:
+        #f2f6f4;
+
+    color:
+        var(--accent-dark);
+}
+
+
+.secondary-action:hover {
+    background:
+        var(--accent-soft);
+}
+
+
+/*
+==================================================
+DPP STATUS
+==================================================
+*/
+
+#dppStatus {
+    margin-top:
+        14px;
+
+    padding:
+        12px
+        14px;
+
+    border-radius:
+        var(--radius-small);
+
+    background:
+        var(--accent-soft);
+
+    color:
+        var(--accent-dark);
+
+    font-size:
+        12px;
+}
+
+
+#dppStatus:empty {
+    display:
+        none;
+}
+
+
+#dppStatus p {
+    margin:
+        3px
+        0;
+}
+
+
+/*
+==================================================
+QR-BEREICH
+==================================================
+*/
+
+.qr-area {
+    margin-top:
+        22px;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid var(--border);
+
+    text-align:
+        center;
+}
+
+
+.qr-heading span {
+    color:
+        var(--text-soft);
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1px;
+}
+
+
+.qr-status {
+    margin:
+        10px
+        0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        11px;
+}
+
+
+.qr-status p {
+    margin:
+        4px
+        0;
+}
+
+
+.qr-code {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        60px;
+
+    margin:
+        14px auto;
+}
+
+
+.qr-code:empty::before {
+    content:
+        "QR";
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        74px;
+
+    height:
+        74px;
+
+    border:
+        1px dashed #c7d2cc;
+
+    border-radius:
+        12px;
+
+    color:
+        #a3aea8;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+}
+
+
+.qr-code img,
+.qr-code canvas {
+    display:
+        block;
+
+    width:
+        min(
+            220px,
+            100%
+        ) !important;
+
+    height:
+        auto !important;
+
+    padding:
+        8px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+    background:
+        #ffffff;
+}
+
+
+.public-link {
+    display:
+        block;
+
+    max-width:
+        100%;
+
+    margin-top:
+        8px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        11px;
+
+    font-weight:
+        650;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/*
+==================================================
+DETAILBEREICH
+==================================================
+*/
+
+.details-area {
+    margin-top:
+        70px;
+}
+
+
+.details-header {
+    margin-bottom:
+        22px;
+}
+
+
+.details-header h2 {
+    margin:
+        0
+        0
+        7px;
+
+    font-size:
+        29px;
+
+    letter-spacing:
+        -0.6px;
+}
+
+
+.details-header p {
+    max-width:
+        700px;
+
+    margin:
+        0;
+
+    color:
+        var(--text-soft);
+
+    font-size:
+        13px;
+}
+
+
+/*
+==================================================
+DETAILKARTEN
+==================================================
+*/
+
+.detail-card {
+    margin-bottom:
+        18px;
+
+    padding:
+        26px
+        28px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--surface);
+}
+
+
+.detail-card > h2 {
+    margin:
+        0
+        0
+        20px;
+
+    font-size:
+        19px;
+
+    letter-spacing:
+        -0.25px;
+}
+
+
+.detail-grid {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        18px;
+}
+
+
+.detail-block {
+    min-width:
+        0;
+
+    padding:
+        18px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--surface-soft);
+}
+
+
+.detail-block > h3 {
+    margin:
+        0
+        0
+        12px;
+
+    font-size:
+        14px;
+}
+
+
+.detail-card h3 {
+    font-size:
+        14px;
+}
+
+
+.detail-card h4 {
+    margin-bottom:
+        6px;
+
+    font-size:
+        12px;
+}
+
+
+.detail-card p,
+.detail-block p {
+    margin:
+        6px
+        0;
+
+    color:
+        #3e4944;
+
+    font-size:
+        12px;
+}
+
+
+.detail-card ul,
+.detail-card ol {
+    padding-left:
+        20px;
+
+    font-size:
+        12px;
+}
+
+
+.highlight-card {
+    border-color:
+        #bcd2c8;
+
+    background:
+        #f7fbf9;
+}
+
+
+/*
+==================================================
+VOM JS ERZEUGTE DETAILS
+==================================================
+*/
+
+.detail-card > div > div {
+    padding:
+        10px
+        0;
+
+    border-bottom:
+        1px solid #e7ece9;
+}
+
+
+.detail-card > div > div:last-child {
+    border-bottom:
+        none;
+}
+
+
+/*
+==================================================
+JSON
+==================================================
+*/
+
+.json-details {
+    margin-top:
+        20px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        var(--radius-medium);
+
+    background:
+        var(--surface);
+}
+
+
+.json-details summary {
+    padding:
+        18px
+        22px;
+
+    color:
+        var(--accent-dark);
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+}
+
+
+#dppPreview {
+    max-height:
+        420px;
+
+    overflow:
+        auto;
+
+    margin:
+        0
+        18px
+        18px;
+
+    padding:
+        18px;
+
+    border-radius:
+        var(--radius-small);
+
+    background:
+        #17201c;
+
+    color:
+        #dce8e2;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.55;
+
+    white-space:
+        pre-wrap;
+
+    overflow-wrap:
+        anywhere;
+}
+
+
+/*
+==================================================
+LINKS
+==================================================
+*/
+
+a {
+    color:
+        var(--accent);
+
+    text-decoration:
+        none;
+}
+
+
+a:hover {
+    text-decoration:
+        underline;
+}
+
+
+/*
+==================================================
+FOOTER
+==================================================
+*/
+
+.page-footer {
+    padding-top:
+        30px;
+
+    font-size:
+        13px;
+}
+
+
+/*
+==================================================
+TABLET
+==================================================
+*/
+
+@media (max-width: 1050px) {
+
+    .generator-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            310px;
+    }
+
+
+    .process-selection-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+/*
+==================================================
+MOBILE
+==================================================
+*/
+
+@media (max-width: 800px) {
+
+    .manufacturer-page {
+        width:
+            min(
+                100% - 24px,
+                1320px
+            );
+
+        padding-top:
+            24px;
+    }
+
+
+    .generator-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .dpp-action-card {
+        position:
+            static;
+    }
+
+
+    .section-heading {
+        display:
+            block;
+
+        padding:
+            22px
+            18px;
+    }
+
+
+    .section-heading > div {
+        margin-bottom:
+            10px;
+    }
+
+
+    .section-heading > p {
+        max-width:
+            none;
+
+        text-align:
+            left;
+    }
+
+
+    .configuration-section {
+        padding:
+            20px
+            18px;
+    }
+
+
+    .product-selection-grid,
+    .dynamic-selection-grid,
+    .process-selection-grid,
+    .detail-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .field-wide {
+        grid-column:
+            auto;
+    }
+
+
+    .details-area {
+        margin-top:
+            45px;
+    }
+
+
+    .detail-card {
+        padding:
+            21px
+            18px;
+    }
+
+}
