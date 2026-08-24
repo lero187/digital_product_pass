@@ -1309,6 +1309,18 @@ async function createDpp() {
 
 
         /*
+        QR-Code erzeugen
+        */
+
+        if (onlineSaved) {
+
+            generateDppQrCode(
+                dpp
+            );
+        }
+
+        
+        /*
         JSON-Vorschau
         */
 

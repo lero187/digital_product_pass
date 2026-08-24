@@ -205,6 +205,23 @@
 
         <div id="dppStatus"></div>
 
+        <h3>QR-Code</h3>
+
+        <div id="qrCodeStatus">
+            Noch kein QR-Code erzeugt.
+        </div>
+
+        <div id="qrCode"></div>
+
+        <p>
+            <a
+                id="dppPublicLink"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            ></a>
+        </p>
+
         <h3>DPP-Datensatz</h3>
 
         <pre id="dppPreview">
@@ -224,6 +241,9 @@
 
     <script src="js/supabase-config.js"></script>
     <script src="js/supabase-dpp.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/qr-code.js"></script>
 
     <script src="js/dpp-builder.js"></script>
     <script src="js/dpp-export.js"></script>
